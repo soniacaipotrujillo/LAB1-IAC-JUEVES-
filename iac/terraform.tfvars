@@ -7,6 +7,6 @@ api_port ={
 
 web_port={
     default =3002
-    localhost =4002
-    dev=5002
+    localhost =4001
+    dev=5001
 }
