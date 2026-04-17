@@ -6,7 +6,7 @@ api_port ={
 }
 
 web_port={
-    default =3000
+    default =80
     localhost =4001
     dev=5001
 }
