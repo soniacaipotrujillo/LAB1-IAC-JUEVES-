@@ -11,7 +11,8 @@
 wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform
-
+# terraform init : inicializa el directorio de trabajo descargando proveedores y módulos necesarios
+#terraform plan : crea un plan de ejecución detallado para previsualizar cambios en la infraestructura antes de aplicarlos. 
 # terraform.tfvars:
 
 web_port={
